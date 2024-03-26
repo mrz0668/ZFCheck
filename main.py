@@ -82,6 +82,7 @@ if not time_content:
         first_run_text,
     )
     info = student_client.get_notifications()
+    print(info)
     send_message('bd2b5248430d41d3b45d2ff49343e2e5','首次运行成功提醒',info['data'][0]['content'])
     with open(time_file_path, "w") as time_file:
         time_file.write(info['data'][0]['create_time'])
