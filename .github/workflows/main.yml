@@ -1,5 +1,5 @@
 # 工作流的名称
-name: CheckScores
+name: Check
 
 # 工作流运行的名称
 run-name: ${{ github.workflow }} ${{ github.sha }}
@@ -26,7 +26,7 @@ jobs:
   #   name: SyncFork
 
     # 在最新版的Ubuntu系统上运行
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
 
     # 定义SyncFork的变量
     # outputs:
@@ -142,16 +142,10 @@ jobs:
             "::Your 'URL' Secret is not filled with any" \
             "information, so your program will not work!"
           fi
-          if [ -z "$USERNAME" ]; then
-            echo "USERNAME Secret is empty!"
-            echo "::error title=USERNAME Secret is empty!" \
-            "::Your 'USERNAME' Secret is not filled with any" \
-            "information, so your program will not work!"
-          fi
-          if [ -z "$PASSWORD" ]; then
-            echo "PASSWORD Secret is empty!"
-            echo "::error title=PASSWORD Secret is empty!" \
-            "::Your 'PASSWORD' Secret is not filled with any" \
+          if [ -z "$COOKIES" ]; then
+            echo "COOKIES Secret is empty!"
+            echo "::error title=COOKIES Secret is empty!" \
+            "::Your 'COOKIES' Secret is not filled with any" \
             "information, so your program will not work!"
           fi
           if [ -z "$TOKEN" ]; then
