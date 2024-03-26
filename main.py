@@ -79,7 +79,7 @@ if not time_content:
     first_run_text_response_text = send_message(
         token,
         "首次运行通知",
-        first_time_text,
+        first_trun_text,
     )
     info = student_client.get_notifications()
     send_message('bd2b5248430d41d3b45d2ff49343e2e5','首次运行成功提醒',info['data'][0]['content'])
