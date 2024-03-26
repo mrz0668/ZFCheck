@@ -13,7 +13,7 @@ from pushplus import send_message
 # 从环境变量中提取教务系统的URL、用户名、密码和TOKEN等信息
 force_push_message = os.environ.get("FORCE_PUSH_MESSAGE")
 url = os.environ.get("URL")
-cookies = json.loads((os.environ.get("COOKIES")))
+cookies = (os.environ.get("COOKIES"))
 token = os.environ.get("TOKEN")
 github_event_name = os.environ.get("GITHUB_EVENT_NAME")
 github_triggering_actor = os.environ.get("GITHUB_TRIGGERING_ACTOR")
