@@ -56,7 +56,7 @@ student_client = Client(
 
 # 如果time.txt文件不存在,则创建文件
 if not os.path.exists(time_file_path):
-    open(grade_file_path, "w").close()
+    open(time_file_path, "w").close()
 
 
 
