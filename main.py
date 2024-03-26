@@ -40,17 +40,15 @@ time_file_path = "time.txt"
 
 
 # 初始化变量
-base_url = url
+# base_url = url
+base_url = 'https://www.gupt.edu.cn/jwglxt/'
 # raspisanie = []
 # ignore_type = []
 # detail_category_type = []
 timeout = 5
 
 # 创建教务系统客户端对象
-student_client = Client(
-    cookies=cookies,
-    base_url=base_url,
-)
+student_client = Client(cookies=cookies,base_url=base_url)
 
 # 如果time.txt文件不存在,则创建文件
 if not os.path.exists(time_file_path):
