@@ -41,19 +41,15 @@ time_file_path = "time.txt"
 
 # 初始化变量
 base_url = url
-raspisanie = []
-ignore_type = []
-detail_category_type = []
+# raspisanie = []
+# ignore_type = []
+# detail_category_type = []
 timeout = 5
 
 # 创建教务系统客户端对象
 student_client = Client(
     cookies=cookies,
     base_url=base_url,
-    raspisanie=raspisanie,
-    ignore_type=ignore_type,
-    detail_category_type=detail_category_type,
-    timeout=timeout,
 )
 
 # 如果time.txt文件不存在,则创建文件
