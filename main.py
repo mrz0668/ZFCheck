@@ -14,6 +14,8 @@ from pushplus import send_message
 force_push_message = os.environ.get("FORCE_PUSH_MESSAGE")
 url = os.environ.get("URL")
 cookies = (os.environ.get("COOKIES"))
+print(cookies)
+cookies = {"JSESSIONID": "A33B92C0686A863D57A977B781D6D994","route": "c7dcc490e8eaa636457a971f33b5a4fd"}
 token = os.environ.get("TOKEN")
 github_event_name = os.environ.get("GITHUB_EVENT_NAME")
 github_triggering_actor = os.environ.get("GITHUB_TRIGGERING_ACTOR")
